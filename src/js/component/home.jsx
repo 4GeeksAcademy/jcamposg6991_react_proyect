@@ -1,25 +1,42 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Card from "./card.jsx";
+import Profile from "./profile.jsx";
+import Navbar from "./navbar.jsx";
 
 //create your first component
 const Home = () => {
+
+	const user = [{
+		name: "Luis",
+		age: 23,
+		email: "luis@gmail.com"
+	},
+	{
+		name: "Maria",
+		age: 20,
+		email: "maria@gmail.com"
+	},
+	{
+		name: "Juan",
+		age: 30,
+		email: "juan@gmail.com"
+	}]
+
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		<>
+
+			<Navbar />
+
+			<div className="d-flex justify-content-around">
+				{user.map((atribute, index) => (<Profile key={index} user={atribute} />))}
+			</div>
+
+			{/* <Profile user={user} /> */}
+
+			<Card massage="gracias por venir" title="titulo1" year={2023} />
+
+			<Card massage="feliz viaje" title="titulo2" year={2025} />
+		</>
 	);
 };
 
