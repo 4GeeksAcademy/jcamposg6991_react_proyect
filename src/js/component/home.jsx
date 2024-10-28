@@ -2,6 +2,8 @@ import React from "react";
 import Card from "./card.jsx";
 import Profile from "./profile.jsx";
 import Navbar from "./navbar.jsx";
+import Hero from "./hero.jsx";
+import Footer from "./footer.jsx";
 
 //create your first component
 const Home = () => {
@@ -26,6 +28,7 @@ const Home = () => {
 		<>
 
 			<Navbar />
+			<Hero />
 
 			<div className="d-flex justify-content-around">
 				{user.map((atribute, index) => (<Profile key={index} user={atribute} />))}
@@ -36,6 +39,8 @@ const Home = () => {
 			<Card massage="gracias por venir" title="titulo1" year={2023} />
 
 			<Card massage="feliz viaje" title="titulo2" year={2025} />
+
+			<Footer />
 		</>
 	);
 };
