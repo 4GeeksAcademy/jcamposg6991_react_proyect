@@ -3,7 +3,6 @@ import React from "react";
 const Hero = () => {
     return (
         <>
-
             <div className="px-4 py-5 m-4 text-left bg-light">
                 <h1 className="display-4 fw-normal">A Warm Welcome</h1>
                 <div className="col-lg-6">
@@ -13,10 +12,6 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
         </>
     )
 }
