@@ -33,20 +33,11 @@ const Home = () => {
 			<Navbar />
 			<Hero />
 
-			{/* <div className="container-fluid">
+			<div className="container-fluid">
 				<div className="row bg-danger">
-					<div className="col-lg-3 col-11 bg-info m-auto">casa</div>
-
+				{user.map((atribute, index) => (<Profile key={index} user={atribute} />))}
 				</div>
-			</div> */}
-
-
-			{/* <div className="row">
-				<div className="col-lg-3 col-11">
-					{user.map((atribute, index) => (<Profile key={index} user={atribute} />))}
-				</div>
-			</div> */}
-
+			</div>
 			<Footer />
 		</>
 	);
