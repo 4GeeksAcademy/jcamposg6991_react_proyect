@@ -9,19 +9,19 @@ import Footer from "./footer.jsx";
 const Home = () => {
 
 	const user = [{
-		img: "https://picsum.photos/200/200",
+		img: "https://picsum.photos/id/" + Math.floor((Math.random() * 1000)) + "/500/325",
 		name: "Luis",
 		age: 23,
 		email: "luis@gmail.com"
 	},
 	{
-		img: "https://picsum.photos/200/200",
+		img: "https://picsum.photos/id/" + Math.floor((Math.random() * 1000)) + "/500/325",
 		name: "Maria",
 		age: 20,
 		email: "maria@gmail.com"
 	},
 	{
-		img: "https://picsum.photos/200/200",
+		img: "https://picsum.photos/id/" + Math.floor((Math.random() * 1000)) + "/500/325",
 		name: "Juan",
 		age: 30,
 		email: "juan@gmail.com"
@@ -33,15 +33,19 @@ const Home = () => {
 			<Navbar />
 			<Hero />
 
-			<div className="d-flex justify-content-around">
-				{user.map((atribute, index) => (<Profile key={index} user={atribute} />))}
-			</div>
+			{/* <div className="container-fluid">
+				<div className="row bg-danger">
+					<div className="col-lg-3 col-11 bg-info m-auto">casa</div>
 
-			{/* <Profile user={user} /> */}
+				</div>
+			</div> */}
 
-			<Card massage="gracias por venir" title="titulo1" year={2023} />
 
-			<Card massage="feliz viaje" title="titulo2" year={2025} />
+			{/* <div className="row">
+				<div className="col-lg-3 col-11">
+					{user.map((atribute, index) => (<Profile key={index} user={atribute} />))}
+				</div>
+			</div> */}
 
 			<Footer />
 		</>

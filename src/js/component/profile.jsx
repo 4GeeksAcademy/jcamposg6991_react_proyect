@@ -3,16 +3,16 @@ import React from "react";
 
 const Profile = (props) => {
 
-    const { name, age, email,img } = props.user
+    const { name, age, email, img } = props.user
 
     return (
-
-        <div className="card">
-            <img src={img} alt="" />
-            <h5>Nombre: {name}</h5>
-            <h5>Edad: {age}</h5>
-            <h5>Email: {email}</h5>
-
+        <div className="card my-4">
+            <img src={img} className="card-img-top" alt="..." />
+            <div className="card-body">
+                <h5 className="card-title">{name}</h5>
+                <p className="card-text">{age}</p>
+                <a href="#" className="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
     )
 }
