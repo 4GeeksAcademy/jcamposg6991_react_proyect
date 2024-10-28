@@ -9,16 +9,19 @@ import Footer from "./footer.jsx";
 const Home = () => {
 
 	const user = [{
+		img: "https://picsum.photos/200/200",
 		name: "Luis",
 		age: 23,
 		email: "luis@gmail.com"
 	},
 	{
+		img: "https://picsum.photos/200/200",
 		name: "Maria",
 		age: 20,
 		email: "maria@gmail.com"
 	},
 	{
+		img: "https://picsum.photos/200/200",
 		name: "Juan",
 		age: 30,
 		email: "juan@gmail.com"
