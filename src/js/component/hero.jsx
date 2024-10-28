@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <>
 
-            <div className="px-4 py-5 m-5 text-left bg-light">
+            <div className="px-4 py-5 m-4 text-left bg-light">
                 <h1 className="display-4 fw-normal">A Warm Welcome</h1>
                 <div className="col-lg-6">
                     <p className="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
